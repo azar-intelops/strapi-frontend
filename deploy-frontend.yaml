@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: strapi-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: strapi-poc
+      component: frontend
+  template:
+    metadata:
+      labels:
+        app: strapi-poc
+        component: frontend
+    spec:
+      containers:
+        - name: strapi-client
+          image: grpofiler/strapi-client:latest
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred
+

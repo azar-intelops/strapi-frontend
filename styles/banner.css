@@ -1,0 +1,128 @@
+.containerBanner {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+  }
+
+  .aboutUsContainerBanner {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  .ImageClass{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .aboutUsBannerImage{
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    width: 100%;
+    height: 50%;
+    object-fit:calc(height - 50%);
+    /* object-fit: cover; */
+    /* font-size: calc(4vw + 4vh + 2vmin); */
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .BannerContent {
+    position: absolute;
+    top : 15%;
+    left: 10%;
+    text-align: left;
+  }
+  
+  .navbarContainer {
+    position: absolute;
+    top: 1%;
+    left: 16px;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 10%;
+    right: 16px;
+    
+  }
+
+  .rightCeneter {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    float: right;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.cousermain{
+    width: 100%;
+    height: 150px;
+    display: flexbox;
+    flex-wrap: nowrap;
+}
+
+  .courseCatogory{
+    width: 90px;
+    height: 154px;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 10px;
+
+  }
+
+  .CouserIcon{
+    position:absolute;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    display: block;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .CouserIcon img{
+    width: 48px;
+    height: 48px;
+    align-items: center;
+  }
+
+  .iconContent{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    overflow-wrap:break-word;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .demo{
+      visibility: hidden;
+    }
+  }

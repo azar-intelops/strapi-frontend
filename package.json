@@ -1,0 +1,38 @@
+{
+  "name": "strapi-tw",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:server": "node --require ./tracing.js server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.10",
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^2.0.15",
+    "@material-tailwind/react": "^1.4.2",
+    "@next/font": "13.1.6",
+    "@opentelemetry/auto-instrumentations-node": "^0.33.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.33.0",
+    "@opentelemetry/resources": "^1.11.0",
+    "@opentelemetry/sdk-node": "^0.33.0",
+    "@opentelemetry/semantic-conventions": "^1.11.0",
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "flowbite": "^1.6.4",
+    "next": "13.1.6",
+    "next-auth": "^4.20.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "reactstrap": "^9.1.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6"
+  }
+}
